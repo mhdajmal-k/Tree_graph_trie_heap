@@ -56,13 +56,12 @@ class MaxHeap{
 }
 
 function heapSort(array) {
-    // Step 1: Build a max heap from the input array
+  
     const maxHeap = new MaxHeap();
     for (let value of array) {
         maxHeap.insert(value);
     }
     
-    // Step 2: Extract the elements from the heap and rebuild the heap
     for (let i = array.length - 1; i >= 0; i--) {
         array[i] = maxHeap.delete();
     }

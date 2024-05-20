@@ -31,8 +31,7 @@ class Graph {
     }
   }
   
-  removeEdge(vertex1,vertex2){
-    this.adjacency[vertex1].delete(vertex2)
+  removeEdge(vertex1,vertex2){    this.adjacency[vertex1].delete(vertex2)
     this.adjacency[vertex2].delete(vertex1)
   }
   removeVertex(vertex){
